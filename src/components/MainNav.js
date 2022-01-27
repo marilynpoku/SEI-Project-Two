@@ -13,7 +13,8 @@ const MainNav = () => {
     <>
       <Container>
         <Navbar.Brand>Cocktail</Navbar.Brand>
-        <Nav.Link></Nav.Link>
+        <Nav.Link>
+        </Nav.Link>
       </Container>
     </>
 

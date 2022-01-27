@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom'
 
 
 
-const Home = ( { finalInput } ) => {
+const Home = ({ finalInput }) => {
 
 
   const [inputs, setInputs] = useState('')
-  const [error, setError] = useState( { error: false, message: '' } )
+  const [error, setError] = useState({ error: false, message: '' })
 
 
   const navigate = useNavigate()
@@ -25,18 +25,20 @@ const Home = ( { finalInput } ) => {
   }
 
 
-  
+
 
   return (
     <>
       <section className='page-wrapper'>
         <header>
           <h1>Cocktails</h1>
-          <p>hello.........</p>
+          <p>Just another Friday night! Type in to get your personalised cocktail menu based on your name.</p>
         </header>
-        <form onSubmit={handleSubmit}>
-          <input type="text" onChange={handleChange} placeholder='Enter your name' defaultValue={inputs} />
-          { error.error && <p>{error.message}</p>} 
+        <form className='input-wrapper' onSubmit={handleSubmit}>
+          <div className='input-txt-box'>
+            <input type="text" onChange={handleChange} placeholder='Enter your name' defaultValue={inputs} />
+            {error.error && <p>{error.message}</p>}
+          </div>
           <button onSubmit={handleSubmit}>Submit</button>
         </form>
       </section>

@@ -1,0 +1,46 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 800%;
+    text-align: center;
+  }
+  p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .input-wrapper{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 50%;
+    .input-txt-box{
+      display: flex;
+      flex-direction: column;
+      input {
+        height: 40px;
+        margin: 10px;
+        border: $accent-1 solid 3px;
+        border-radius: 5px;
+      }
+    } p {
+      color: darken($color: $txt-color, $amount: 20%);
+      font-size: 12px;
+    }
+    button {
+      height: 40px;
+      width: 100px;
+      margin-top: 11px;
+      color: $accent-1;
+      border-radius: 5px;
+      color: lighten($color: $accent-1, $amount: 20%);
+      font-weight: bold;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(247,250,250,0.34);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(247,250,250,0.34);
+      box-shadow: 0px 0px 5px 0px rgba(247,250,250,0.34);
+      border: none;
+  }
+  }
+}

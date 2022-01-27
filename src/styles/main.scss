@@ -1,5 +1,12 @@
-.color p {
-color: black;
+@import './variables.scss';
+@import './card.scss';
+@import './nav.scss';
+@import './home.scss';
+
+
+*{
+  background-color: $bg-color;
+  color: $txt-color;
 }
 
 
@@ -7,3 +14,11 @@ body {
   height: 100vh;
   box-sizing: border-box;
 }
+
+
+section {
+  height: 96vh;
+  
+}
+
+

@@ -11,8 +11,8 @@ const MainNav = () => {
   return (
 
     <>
-      <Container>
-        <Navbar.Brand>Cocktail</Navbar.Brand>
+      <Container className='w-100 nav-wrapper' >
+        <Navbar.Brand className='nav-brand'>Cocktails🍸</Navbar.Brand>
         <Nav.Link>
         </Nav.Link>
       </Container>

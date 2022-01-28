@@ -12,14 +12,9 @@ const MainNav = () => {
 
     <>
       <Container className='w-100 nav-wrapper' >
-        <Navbar.Brand className='nav-brand'>Cocktails🍸</Navbar.Brand>
-        <Nav.Link>
-        </Nav.Link>
+        <Navbar.Brand href='/'className='nav-brand'>Cocktails🍸</Navbar.Brand>
       </Container>
     </>
-
-
-
   )
 }
 

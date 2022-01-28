@@ -16,7 +16,6 @@ const App = () => {
 
   const finalInput = ['']
 
-
   return (
     <>
       <BrowserRouter>
@@ -24,13 +23,9 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home finalInput={finalInput}/>}></Route>
           <Route path='/result' element={<Result finalInput={finalInput} />}></Route>
-
         </Routes>
-
       </BrowserRouter>
     </>
-
-
   )
 }
 

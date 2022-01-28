@@ -9,7 +9,7 @@ const Result = ({ finalInput }) => {
 
   const [cocktails, setCocktails] = useState([])
 
-  // const [isError, setIsError] = ({ error: false, message: '' })
+  const [isError, setIsError] = useState('')
 
   const resultArr = finalInput[0].split('')
 
@@ -28,8 +28,8 @@ const Result = ({ finalInput }) => {
       return { name: data.drinks[randomNum].strDrink, image: data.drinks[randomNum].strDrinkThumb }
 
     } catch (error) {
-      // setIsError({ error: true, message: error.message })
-      console.log(error)
+      setIsError('Failed to load')
+
     }
   }
 
@@ -60,9 +60,13 @@ const Result = ({ finalInput }) => {
           )
         })
         }
-        <div className='result-btn-wrapper w-100'>
-          <button id='result-page-btn'><Link to='/'>Not enough?</Link></button>
-        </div>
+        {isError.length ?
+          <p>{isError}</p>
+          :
+          <div className='result-btn-wrapper w-100'>
+            <button id='result-page-btn'><Link to='/'>Not enough?</Link></button>
+          </div>
+        }
       </section>
     </>
   )

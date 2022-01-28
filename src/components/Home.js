@@ -37,6 +37,9 @@ const Home = ({ finalInput }) => {
           <button onSubmit={handleSubmit}>Submit</button>
         </form>
       </section>
+      <footer>
+      © Made by Essi &amp; Marilyn
+      </footer>
     </>
   )
 }

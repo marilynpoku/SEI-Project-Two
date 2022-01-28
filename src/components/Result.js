@@ -46,9 +46,6 @@ const Result = ({ finalInput }) => {
   }, [])
 
 
-
-
-
   return (
 
     <>
